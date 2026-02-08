@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TCGvault</string>
+
+    <!-- Login/Register -->
+    <string name="error_enter_credentials">Please enter a username and password.</string>
+    <string name="error_username_short">Username must be at least 3 characters.</string>
+    <string name="error_password_short">Password must be at least 6 characters.</string>
+
+    <string name="register_success">Account created. You can log in now.</string>
+    <string name="register_failed">Registration failed. Username may already exist.</string>
+
+    <string name="login_user_not_found">No account found for that username.</string>
+    <string name="login_incorrect_password">Incorrect password.</string>
+
+    <!-- Account -->
+    <string name="logged_in_as">Logged in as: %1$s</string>
+    <string name="logged_in_as_unknown">Logged in.</string>
+
+</resources>
