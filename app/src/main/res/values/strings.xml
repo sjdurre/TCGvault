@@ -16,4 +16,27 @@
     <string name="logged_in_as">Logged in as: %1$s</string>
     <string name="logged_in_as_unknown">Logged in.</string>
 
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="error_password_rules">Password must be at least 8 characters and include at least 1 letter and 1 number.</string>
+
+    <string name="vault_title">Your Vault</string>
+    <string name="vault_instructions">Type a full or partial card name to search (wildcards supported).</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="add_sample_cards">Add Sample Cards</string>
+    <string name="no_results">No cards found. Try a different search.</string>
+
+    <string name="vault">Vault</string>
+
+    <string name="account">Account</string>
+    <string name="pokemon">Pokémon</string>
+    <string name="yugioh">Yu-Gi-Oh!</string>
+    <string name="magic">Magic: The Gathering</string>
+
+
+
 </resources>

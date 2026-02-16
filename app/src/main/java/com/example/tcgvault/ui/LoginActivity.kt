@@ -51,8 +51,8 @@ class LoginActivity : AppCompatActivity() {
                 txtStatus.text = getString(R.string.error_username_short)
                 return@setOnClickListener
             }
-            if (password.length < 6) {
-                txtStatus.text = getString(R.string.error_password_short)
+            if (!SecurityUtils.passwordMeetsRules(password)) {
+                txtStatus.text = getString(R.string.error_password_rules)
                 return@setOnClickListener
             }
 
