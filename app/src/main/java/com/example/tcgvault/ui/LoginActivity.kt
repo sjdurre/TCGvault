@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tcgvault.R
 import com.example.tcgvault.auth.SessionManager
@@ -36,13 +37,14 @@ class LoginActivity : AppCompatActivity() {
         val txtUsername = findViewById<EditText>(R.id.txtUsername)
         val txtPassword = findViewById<EditText>(R.id.txtPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
-        val btnRegister = findViewById<Button>(R.id.btnLogin)
+        val btnRegister = findViewById<Button>(R.id.btnRegister)
         val txtStatus = findViewById<TextView>(R.id.txtStatus)
 
         val db = AppDatabase.getInstance(this)
         val userDao = db.userDao()
 
         btnRegister.setOnClickListener {
+            Toast.makeText(this, "Register clicked", Toast.LENGTH_SHORT).show()
             val username = txtUsername.text.toString().trim()
             val password = txtPassword.text.toString()
 

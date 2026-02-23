@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter full or partial card name to search."
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search cards"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/btnAddSample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Sample Cards"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No cards found."
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
