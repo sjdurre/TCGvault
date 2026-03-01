@@ -79,18 +79,5 @@ class VaultActivity : AppCompatActivity() {
                 render(all)
             }
         }
-
-        // Optional: add sample cards so you can demo search even if vault UI isn't done yet
-        btnAddSample.setOnClickListener {
-            uiScope.launch {
-                withContext(Dispatchers.IO) {
-                    cardDao.insertCard(CardEntity(ownerUserId = userId, cardName = "Blue-Eyes White Dragon", tcgType = "Yu-Gi-Oh!", quantity = 1))
-                    cardDao.insertCard(CardEntity(ownerUserId = userId, cardName = "Charizard", tcgType = "Pokémon", quantity = 1))
-                    cardDao.insertCard(CardEntity(ownerUserId = userId, cardName = "Black Lotus", tcgType = "Magic", quantity = 1))
-                }
-                val all = withContext(Dispatchers.IO) { cardDao.getAllCards(userId) }
-                render(all)
-            }
-        }
     }
 }
