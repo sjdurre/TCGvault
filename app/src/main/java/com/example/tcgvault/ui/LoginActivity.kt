@@ -31,6 +31,10 @@ class LoginActivity : AppCompatActivity() {
             finish()
             return
         }
+        window.setFlags(
+            android.view.WindowManager.LayoutParams.FLAG_SECURE,
+            android.view.WindowManager.LayoutParams.FLAG_SECURE
+        )
 
         setContentView(R.layout.activity_login)
 

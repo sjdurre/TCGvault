@@ -1,6 +1,7 @@
 package com.example.tcgvault.ui
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -50,7 +51,7 @@ class VaultActivity : AppCompatActivity() {
 
         fun render(list: List<CardEntity>) {
             adapter.update(list)
-            txtEmpty.visibility = if (list.isEmpty()) TextView.VISIBLE else TextView.GONE
+            txtEmpty.visibility = if (list.isEmpty()) View.VISIBLE else View.GONE
         }
 
         // Load all cards initially

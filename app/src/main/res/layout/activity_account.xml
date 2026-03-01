@@ -31,13 +31,13 @@
             android:id="@+id/btnBackHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home" />
+            android:text="@string/home" />
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Logout" />
+            android:text="@string/logout" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

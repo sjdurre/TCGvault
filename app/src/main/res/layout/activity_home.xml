@@ -34,21 +34,21 @@
             android:layout_width="122dp"
             android:layout_height="129dp"
             android:contentDescription="@string/magic"
-            app:srcCompat="@android:drawable/btn_dialog" />
+            app:srcCompat="@drawable/magic" />
 
         <ImageButton
             android:id="@+id/btnPokemon"
             android:layout_width="122dp"
             android:layout_height="129dp"
             android:contentDescription="@string/pokemon"
-            app:srcCompat="@android:drawable/btn_dialog" />
+            app:srcCompat="@drawable/pokemon" />
 
         <ImageButton
             android:id="@+id/btnYugioh"
             android:layout_width="122dp"
             android:layout_height="129dp"
             android:contentDescription="@string/yugioh"
-            app:srcCompat="@android:drawable/btn_dialog" />
+            app:srcCompat="@drawable/yugioh" />
     </LinearLayout>
 
     <!-- Vault navigation (Phase #2 requirement) -->
